@@ -3,7 +3,7 @@ import photo from "../assets/about_me_photo.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const About_me = () => {
+const AboutMe = () => {
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.5,
@@ -53,4 +53,4 @@ const About_me = () => {
     );
 };
 
-export default About_me;
+export default AboutMe;

@@ -7,23 +7,25 @@ import 'swiper/css';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import {useInView} from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 
-const IconCarousel = () => {
+const Skills = () => {
     const icons = [
-        <FaHtml5 size={100} color="white" />,
-        <FaCss3Alt size={100} color="white" />,
-        <FaJsSquare size={100} color="white" />,
-        <SiTypescript size={100} color="white" />,
-        <FaReact size={100} color="white" />,
-        <RiTailwindCssFill size={100} color="white" />,
-        <FaNodeJs size={100} color="white" />,
-        <FaGitAlt size={100} color="white" />
+        { icon: <FaHtml5 size={100} color="white" />, name: "HTML" },
+        { icon: <FaCss3Alt size={100} color="white" />, name: "CSS" },
+        { icon: <FaJsSquare size={100} color="white" />, name: "JavaScript" },
+        { icon: <SiTypescript size={100} color="white" />, name: "TypeScript" },
+        { icon: <FaReact size={100} color="white" />, name: "React" },
+        { icon: <RiTailwindCssFill size={100} color="white" />, name: "Tailwind" },
+        { icon: <FaNodeJs size={100} color="white" />, name: "Node.js" },
+        { icon: <FaGitAlt size={100} color="white" />, name: "Git" },
     ];
+
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.5,
     });
+
     const variants = {
         hidden: {
             opacity: 0,
@@ -39,7 +41,7 @@ const IconCarousel = () => {
     };
 
     return (
-        <div className="w-full  mx-auto my-10  py-10">
+        <div className="w-full mx-auto my-10 py-10">
             <motion.h1
                 ref={ref}
                 className="text-4xl font-bold flex justify-center py-10"
@@ -60,9 +62,19 @@ const IconCarousel = () => {
                 }}
                 speed={5000}
             >
-                {icons.map((icon, index) => (
-                    <SwiperSlide key={index} className="flex justify-center items-center">
-                        {icon}
+                {icons.map((item, index) => (
+                    <SwiperSlide
+                        key={index}
+                        className="flex flex-col items-center justify-center text-center h-full"
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        {item.icon}
+                        <span className="text-white mt-2 text-lg">{item.name}</span>
                     </SwiperSlide>
                 ))}
             </Swiper>
@@ -70,4 +82,4 @@ const IconCarousel = () => {
     );
 };
 
-export default IconCarousel;
+export default Skills;

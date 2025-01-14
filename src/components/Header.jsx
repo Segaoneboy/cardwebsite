@@ -58,7 +58,7 @@ const Header = () => {
             {screenType === "large" && (
                 <div className="h-screen ">
                     <div
-                        className="flex items-center justify-center h-screen  text-white"
+                        className="flex items-center justify-center h-screen text-white"
                     >
                         <h1 className="text-white text-12xl font-bold">S</h1>
                     </div>
@@ -67,7 +67,7 @@ const Header = () => {
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
+                        style={{fontFamily: "'Comic Sans MS', serif"}}
 
                     >
                         <h1 className="text-white text-4xl ">#IT</h1>

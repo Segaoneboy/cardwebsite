@@ -11,14 +11,14 @@ import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
     const icons = [
-        { icon: <FaHtml5 size={100} color="white" />, name: "HTML" },
-        { icon: <FaCss3Alt size={100} color="white" />, name: "CSS" },
-        { icon: <FaJsSquare size={100} color="white" />, name: "JavaScript" },
-        { icon: <SiTypescript size={100} color="white" />, name: "TypeScript" },
-        { icon: <FaReact size={100} color="white" />, name: "React" },
-        { icon: <RiTailwindCssFill size={100} color="white" />, name: "Tailwind" },
-        { icon: <FaNodeJs size={100} color="white" />, name: "Node.js" },
-        { icon: <FaGitAlt size={100} color="white" />, name: "Git" },
+        { icon: <FaHtml5  color="white" />, name: "HTML" },
+        { icon: <FaCss3Alt  color="white" />, name: "CSS" },
+        { icon: <FaJsSquare  color="white" />, name: "JavaScript" },
+        { icon: <SiTypescript  color="white" />, name: "TypeScript" },
+        { icon: <FaReact  color="white" />, name: "React" },
+        { icon: <RiTailwindCssFill  color="white" />, name: "Tailwind" },
+        { icon: <FaNodeJs  color="white" />, name: "Node.js" },
+        { icon: <FaGitAlt  color="white" />, name: "Git" },
     ];
 
     const { ref, inView } = useInView({
@@ -73,7 +73,9 @@ const Skills = () => {
                             justifyContent: "center",
                         }}
                     >
-                        {item.icon}
+                        <div className="text-[50px] sm:text-[70px] md:text-[100px]">
+                            {item.icon}
+                        </div>
                         <span className="text-white mt-2 text-lg">{item.name}</span>
                     </SwiperSlide>
                 ))}

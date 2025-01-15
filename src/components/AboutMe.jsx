@@ -27,7 +27,7 @@ const AboutMe = () => {
             <div>
                 <motion.h1
                     ref={ref}
-                    className="lg:text-4xl text-xl font-bold flex justify-center py-10"
+                    className="text-4xl font-bold flex justify-center py-10"
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
@@ -39,7 +39,7 @@ const AboutMe = () => {
                         <img src={photo} alt='Sega' className=" rounded-xl  "/>
                     </div>
 
-                    <p className="md:ml-40 px-28 my-4 font-bold md:text-2xl sm:text-xl text-center content-center ">
+                    <p className="md:ml-40 px-12 md:px-28  my-4 font-bold text-2xl  text-center content-center ">
                         Пересыпкин Сергей (Peresypkin Sergey):<br/>
                         3+ года в Frontend.<br/>
                         Победитель хакатонов.<br/>

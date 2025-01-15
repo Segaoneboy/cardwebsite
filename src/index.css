@@ -13,6 +13,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@layer base {
+  body {
+    font-family: 'Segoe UI', serif;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

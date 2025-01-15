@@ -148,7 +148,7 @@ const Header = () => {
                     </motion.h1>
 
                     <motion.h1
-                        className="absolute top-2/3 left-60p text-white text-4xl rotate-24"
+                        className="absolute top-40p left-60p text-white text-4xl rotate-24"
                         initial="hidden"
                         animate="visible"
                         variants={variants}

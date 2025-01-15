@@ -27,26 +27,26 @@ const AboutMe = () => {
             <div>
                 <motion.h1
                     ref={ref}
-                    className="text-4xl font-bold flex justify-center py-10"
+                    className="lg:text-4xl text-xl font-bold flex justify-center py-10"
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
                 >
                     About me
                 </motion.h1>
-                <div>
-                    <div className="flex justify-center mx-24 my-4 ">
-                        <img src={photo} alt="Photo" className="w-1/3 rounded-xl  "/>
-
-                        <p className="ml-40 px-28 font-bold text-2xl content-center ">
-                            Пересыпкин Сергей (Peresypkin Sergey):<br/>
-                            3+ года в Frontend.<br/>
-                            Победитель хакатонов<br/>
-                            Разработчик web-приложений на React<br/>
-                            Основатель и лидер команды Sycroll Arts<br/>
-
-                        </p>
+                <div className="flex justify-center flex-col md:flex-row md:mx-24 my-4 ">
+                    <div className="md:w-1/2 w-3/4 m-auto ">
+                        <img src={photo} alt='Sega' className=" rounded-xl  "/>
                     </div>
+
+                    <p className="md:ml-40 px-28 my-4 font-bold md:text-2xl sm:text-xl text-center content-center ">
+                        Пересыпкин Сергей (Peresypkin Sergey):<br/>
+                        3+ года в Frontend.<br/>
+                        Победитель хакатонов.<br/>
+                        Разработчик web-приложений на React.<br/>
+                        Основатель и лидер команды Sycroll Arts.<br/>
+
+                    </p>
                 </div>
             </div>
         </>

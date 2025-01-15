@@ -104,9 +104,10 @@ const Header = () => {
             )}
             {screenType === "mobile" && (
                 <div
-                    className='w-screen min-h-96 max-h-96 '>
+                    className='w-screen min-h-96 max-h-96'
+                >
                     <div className="min-h-96 flex items-center justify-center">
-                        <h1 className="flex items-center justify-center text-white text-12xl font-bold">S</h1>
+                        <h1 className="text-white text-12xl font-bold">S</h1>
                     </div>
                     <motion.h1
                         className="absolute text-white top-24 left-20 text-4xl rotate-24"
@@ -119,7 +120,7 @@ const Header = () => {
                     </motion.h1>
 
                     <motion.h1
-                        className="absolute top-72 left-60p text-white text-4xl rotate-24"
+                        className="absolute text-white top-72 left-60p text-4xl rotate-24"
                         initial="hidden"
                         animate="visible"
                         variants={variants}

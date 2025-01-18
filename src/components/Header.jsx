@@ -132,9 +132,9 @@ const Header = () => {
                 </div>
             )}
             {screenType ==="tablet" && (
-                <div className = 'relative w-screen min-h-28r max-h-96 '>
+                <div className = 'relative w-full min-h-28r '>
                     <div className = "min-h-28r flex items-center justify-center">
-                        <h1 className = "flex items-center justify-center text-white text-12xl font-bold">S</h1>
+                        <h1 className = "text-white text-12xl font-bold">S</h1>
                     </div>
                     <motion.h1
                         className="absolute text-white top-40 left-1/3 text-4xl rotate-24"

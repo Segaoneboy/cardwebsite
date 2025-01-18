@@ -2,6 +2,7 @@ import React from "react";
 import photo from "../assets/test2.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import AnimatedTextAboutMe from "./AnimateTextAboutMe";
 
 const AboutMe = () => {
     const { ref, inView } = useInView({
@@ -34,19 +35,19 @@ const AboutMe = () => {
                 >
                     About me
                 </motion.h1>
-                <div className="flex justify-center flex-col md:flex-row md:mx-24 my-4 ">
-                    <div className="md:w-1/2 w-3/4 m-auto ">
-                        <img src={photo} alt='Sega' className=" rounded-xl  "/>
+                <div className="flex justify-center flex-col lg:flex-row sm:mx-24 my-4 ">
+                    <div className="md:w-2/3 w-3/4 m-auto ">
+                        <motion.img
+                            src={photo}
+                            alt='Sega'
+                            className=" rounded-xl"
+                            initial="hidden"
+                            animate={inView ? "visible" : "hidden"}
+                            variants={variants}
+                        />
                     </div>
 
-                    <p className="md:ml-40 px-12 md:px-28  my-4 font-bold text-2xl  text-center content-center ">
-                        Пересыпкин Сергей (Peresypkin Sergey):<br/>
-                        3+ года в Frontend.<br/>
-                        Победитель хакатонов.<br/>
-                        Разработчик web-приложений на React.<br/>
-                        Основатель и лидер команды Sycroll Arts.<br/>
-
-                    </p>
+                    <AnimatedTextAboutMe/>
                 </div>
             </div>
         </>

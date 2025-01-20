@@ -29,8 +29,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Serif, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   color: #ffffff;
   background: linear-gradient(to top right, #40125B 10%, #200830, black 65%);
 }

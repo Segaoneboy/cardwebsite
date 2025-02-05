@@ -7,6 +7,9 @@ module.exports = {
       rotate: {
         24: "24deg",
       },
+      fontFamily: {
+        sans:['Quicksand', 'sans-serif'],
+      },
     },
   },
   plugins: [],

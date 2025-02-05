@@ -36,7 +36,7 @@ const Contacts = () => {
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
                 >
-                    Contacts
+                    Контакты
                 </motion.h1>
                 <motion.p
                     ref={ref}
@@ -45,11 +45,11 @@ const Contacts = () => {
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
                 >
-                    Want to know more or just chat?<br/>
-                    You are welcome!
+                    Хотите узнать больше или просто пообщаться?<br/>
+                    Вперёд!
                 </motion.p>
                 <button className= 'rounded-lg text-bold text-xl border-2 border-white my-4 px-4 py-2' onClick={handleClick}>
-                    Send message
+                    Написать
                 </button>
                 <div className="flex justify-between mb-4">
                     <a href="https://www.instagram.com/sega_oneboy/">

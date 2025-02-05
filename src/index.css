@@ -23,7 +23,7 @@
 
 @layer base {
   body {
-    font-family: -apple-system, 'Segoe UI', serif;
+    font-family: -apple-system, 'Quicksand', serif;
   }
 }
 
@@ -31,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, "Segoe UI", Serif, serif;
+  font-family: -apple-system, "Quicksand", Serif, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;

@@ -49,7 +49,7 @@ const Skills = () => {
                 animate={inView ? "visible" : "hidden"}
                 variants={variants}
             >
-                Skills
+                Навыки
             </motion.h1>
             <Swiper
                 modules={[Autoplay]}

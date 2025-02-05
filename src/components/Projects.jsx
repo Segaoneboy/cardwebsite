@@ -1,7 +1,7 @@
 import React from 'react';
 import {useInView} from "react-intersection-observer";
 import {motion} from "framer-motion";
-import medi from "../assets/medi.png"
+import medi from "../assets/photos/medi.png"
 import ProjectBlock from "./ProjectBlock";
 const Projects = () => {
     const mediText = 'Meditation project'
@@ -35,7 +35,7 @@ const Projects = () => {
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
                 >
-                    Projects
+                    Проекты
                 </motion.h1>
                 <ProjectBlock image = {medi} text ={mediText} href={mediHref} />
             </div>

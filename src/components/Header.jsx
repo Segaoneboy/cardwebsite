@@ -63,40 +63,36 @@ const Header = () => {
                         <h1 className="text-white text-12xl font-bold">S</h1>
                     </div>
                     <motion.div
-                        className="absolute top-60 left-2-5 text-white  rotate-24 "
+                        className="absolute top-60 left-2-5 text-white  rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', serif"}}
 
                     >
                         <h1 className="text-white text-4xl ">#IT</h1>
                     </motion.div>
                     <motion.div
-                        className="absolute top-65p left-3-5 text-white  rotate-24 "
+                        className="absolute top-65p left-3-5 text-white  rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
 
                     >
                         <h1 className="text-white text-4xl ">New?</h1>
                     </motion.div>
                     <motion.div
-                        className="absolute top-1/2 left-1/4 text-white  rotate-24 "
+                        className="absolute top-1/2 left-1/4 text-white  rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={secondary}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         <h1 className="text-white text-4xl ">#Frontend</h1>
                     </motion.div>
                     <motion.div
-                        className="absolute top-40p left-60p text-white  rotate-24 "
+                        className="absolute top-40p left-60p text-white  rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={secondary}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         <h1 className="text-white text-4xl ">#Sycroll Arts</h1>
                     </motion.div>
@@ -110,21 +106,19 @@ const Header = () => {
                         <h1 className="text-white text-9xl font-bold">S</h1>
                     </div>
                     <motion.h1
-                        className="absolute text-white top-20 left-20 text-4xl rotate-24"
+                        className="absolute text-white top-20 left-20 text-4xl rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         #IT
                     </motion.h1>
 
                     <motion.h1
-                        className="absolute text-white top-72 left-60p text-4xl rotate-24"
+                        className="absolute text-white top-72 left-60p text-4xl rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         New?
                     </motion.h1>
@@ -137,21 +131,19 @@ const Header = () => {
                         <h1 className = "text-white text-12xl font-bold">S</h1>
                     </div>
                     <motion.h1
-                        className="absolute text-white top-40 left-1/3 text-4xl rotate-24"
+                        className="absolute text-white top-40 left-1/3 text-4xl rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         #IT
                     </motion.h1>
 
                     <motion.h1
-                        className="absolute top-65p left-60p text-white text-4xl rotate-24"
+                        className="absolute top-65p left-60p text-white text-4xl rotate-24 font-comic"
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        style={{fontFamily: "'Comic Sans MS', cursive"}}
                     >
                         New?
                     </motion.h1>

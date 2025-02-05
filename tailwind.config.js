@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         sans:['Quicksand', 'sans-serif'],
+        comic:['Comic Sans Ms', 'cursive'],
       },
     },
   },

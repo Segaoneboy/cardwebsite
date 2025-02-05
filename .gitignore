@@ -3,10 +3,10 @@
 /node_modules
 /.pnp
 .pnp.js
-/photos/3x4.jpg
-/photos/about_me_photo.jpg
-/photos/enactus-semi-finalist.jpg
-/photos/medi.png
+/src/assets/photos/3x4.jpg
+/src/assets/photos/about_me_photo.jpg
+/src/assets/photos/enactus-semi-finalist.jpg
+/src/assets/photos/medi.png
 
 # testing
 /coverage

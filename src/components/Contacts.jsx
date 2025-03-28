@@ -40,7 +40,7 @@ const Contacts = () => {
                 </motion.h1>
                 <motion.p
                     ref={ref}
-                    className="text-center py-4"
+                    className="text-center py-4 px-4"
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                     variants={variants}
